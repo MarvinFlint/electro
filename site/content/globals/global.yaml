@@ -1,0 +1,10 @@
+navigation_title: Navigation
+segment_title_1: Keystones
+keystone_tooltip: 'Keystones are the most important choice for your playstyle'
+segment_title_2: Lanes
+lanes_tooltip: 'The lane you want to play.'
+segment_title_3: Playstyle
+adaptive_force_tooltip: 'Whether you go Attack Damage or Ability Power'
+fieldset: navigation_content
+title: 'Navigation Content'
+id: 6ca8bdce-febb-47f6-83f5-728f1fa25f03

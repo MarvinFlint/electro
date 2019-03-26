@@ -1,0 +1,46 @@
+<nav class="nav col-lg-3 col-md-6 col-sm-xs-12">
+    <div class="col-12 nav-header">
+        <div class="nav-toggle">
+            <img class="toggle-pic" src="{{ theme:img src='navtoggle.png' }}">
+        </div>
+    </div>
+    <div class="col-12 nav-content">
+        <h1 class="title nav-title">{{ navigation_title }}</h1>
+        <div class="col-12 nav-segment choice">
+            <h2 class="title segment-title">{{ segment_title_1 }}</h2>
+            <div id="keystones" class="choices" title="{{ keystone_tooltip }}">                
+                {{ collection from="keystones" }}
+                <div id="{{ choice_id }}" class="keystone pic-container" title=" {{ choice_title }}">
+                    {{ assets:choice_picture }}
+                    <img src="{{ url }}">
+                    {{ /assets:choice_picture }}
+                </div>
+                {{ /collection }}
+            </div>
+        </div>
+        <div class="col-12 nav-segment choice">
+            <h2 class="title segment-title">{{ segment_title_2 }}</h2>
+            <div id="lanes" class="choices" title="{{ lanes_tooltip }}">                
+                {{ collection from="lanes" sort="category"}}
+                <div id="{{ choice_id }}" class="lane pic-container" title="{{ choice_title }}">
+                    {{ assets:choice_picture }}
+                    <img src="{{ url }}">
+                    {{ /assets:choice_picture }}
+                </div>
+                {{ /collection }}
+            </div>
+        </div>
+        <div class="col-12 nav-segment choice">
+            <h2 class="title segment-title">{{ segment_title_3 }}</h2>
+            <div id="af" class="choices" title="{{ adaptive_force_tooltip }}">
+                {{ collection from="adaptive_force" sort="category"}}
+                <div id="{{ choice_id }}" class="af pic-container" title="{{ choice_title }}">
+                    {{ assets:choice_picture }}
+                    <img src="{{ url }}">
+                    {{ /assets:choice_picture }}
+                </div>
+                {{ /collection }}
+            </div>
+        </div>        
+    </div>
+</nav>

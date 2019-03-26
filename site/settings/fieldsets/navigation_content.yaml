@@ -1,0 +1,36 @@
+title: globals
+sections:
+  nav_header:
+    display: 'Nav Header'
+    fields:
+      navigation_title:
+        type: text
+        display: 'Navigation Title'
+  keystone_segment:
+    display: 'Keystone Segment'
+    fields:
+      segment_title_1:
+        type: text
+        display: 'Segment Title'
+      keystone_tooltip:
+        type: textarea
+        display: 'Keystone Tooltip'
+  lanes_segment:
+    display: 'Lanes Segment'
+    fields:
+      segment_title_2:
+        type: text
+        display: 'Segment Title'
+      lanes_tooltip:
+        type: textarea
+        display: 'Lanes Tooltip'
+  adaptive_force_segment:
+    display: 'Adaptive Force Segment'
+    fields:
+      segment_title_3:
+        type: text
+        display: 'Segment Title'
+      adaptive_force_tooltip:
+        type: textarea
+        display: 'Adaptive Force Tooltip'
+taxonomies: true

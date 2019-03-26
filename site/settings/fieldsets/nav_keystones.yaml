@@ -1,0 +1,21 @@
+sections:
+  main:
+    display: Main
+    fields:
+      choice_picture:
+        container: main
+        folder: /
+        restrict: false
+        type: assets
+        display: 'Choice Picture'
+      choice_title:
+        type: textarea
+        display: 'Choice Title'
+      choice_id:
+        type: text
+        display: 'Choice ID'
+      category:
+        type: text
+        display: category
+taxonomies: true
+title: 'Nav Choices'
