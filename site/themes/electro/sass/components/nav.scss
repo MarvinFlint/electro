@@ -11,10 +11,12 @@
     position: absolute;
     top: 0;
     left: 0;
+    padding: 0;
 }
 .nav-segment{
     display: flex;
     flex-direction: column;
+    padding: 0;
     .choices{
         display: flex;
         .pic-container{
