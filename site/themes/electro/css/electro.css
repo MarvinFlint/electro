@@ -13,6 +13,7 @@
   top: 0;
   left: 0;
   padding: 0;
+  z-index: 1;
 }
 
 .nav-segment {
@@ -42,6 +43,10 @@
 
 .nav-content {
   padding: 0;
+}
+
+.runepage img {
+  max-width: 100%;
 }
 
 /*# sourceMappingURL=electro.css.map */

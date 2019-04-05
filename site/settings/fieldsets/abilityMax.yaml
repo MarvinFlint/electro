@@ -1,0 +1,27 @@
+sections:
+  main:
+    display: Main
+    fields:
+      maxfirst:
+        restrict: false
+        type: assets
+        display: 'First Max'
+        container: main
+        folder: AbilityAssets
+      maxsecond:
+        restrict: false
+        type: assets
+        display: 'Second Max'
+        container: main
+        folder: AbilityAssets
+      maxthird:
+        restrict: false
+        type: assets
+        display: 'Third Max'
+        container: main
+        folder: AbilityAssets
+      panelID:
+        type: text
+        display: 'Panel ID'
+taxonomies: true
+title: 'Ability Max Order'

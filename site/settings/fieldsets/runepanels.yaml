@@ -1,0 +1,18 @@
+sections:
+  main:
+    display: Main
+    fields:
+      runepic:
+        container: main
+        folder: /
+        restrict: false
+        type: assets
+        display: 'Runepage Picture'
+      panelID:
+        type: text
+        display: 'Panel ID'
+      rune_panel_text:
+        type: textarea
+        display: 'Runepanel Text'
+taxonomies: true
+title: Runepanels
