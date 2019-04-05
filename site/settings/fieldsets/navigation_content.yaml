@@ -33,4 +33,13 @@ sections:
       adaptive_force_tooltip:
         type: textarea
         display: 'Adaptive Force Tooltip'
+  enemy_segment:
+    display: 'Enemy Segment'
+    fields:
+      segment_title_4:
+        type: text
+        display: 'Segment Title'
+      enemy_tooltip:
+        type: textarea
+        display: 'Enemy Tooltip'
 taxonomies: true
