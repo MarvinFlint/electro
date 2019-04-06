@@ -1,0 +1,15 @@
+sections:
+  main:
+    display: Main
+    fields:
+      ib_playstyle:
+        type: text
+        display: 'Associated Playstyle'
+      itembuild_pics:
+        container: main
+        folder: /
+        restrict: false
+        type: assets
+        display: 'Item Pictures'
+taxonomies: true
+title: 'Itembuild Panels'
