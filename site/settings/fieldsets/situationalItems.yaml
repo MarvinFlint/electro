@@ -1,0 +1,21 @@
+sections:
+  main:
+    display: Main
+    fields:
+      si_playstyle:
+        type: text
+        display: 'Associated Playstyle'
+      sit_pic:
+        container: main
+        folder: itemassets
+        restrict: false
+        type: assets
+        display: 'Item Picture'
+      situational_item_text:
+        type: textarea
+        display: 'Situational Item Description'
+      panelID:
+        type: text
+        display: 'Panel ID'
+taxonomies: true
+title: 'Situational Items'

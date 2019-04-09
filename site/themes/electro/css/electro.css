@@ -10164,22 +10164,28 @@ html {
   left: 0;
   padding: 0;
   z-index: 1;
+  background-color: rgba(0, 0, 0, 0.85);
 }
 
 .nav-segment {
   display: flex;
   flex-direction: column;
   padding: 0;
+  border: 1px solid white;
 }
 
 .nav-segment .choices {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-segment .choices .pic-container {
   height: 55px;
   width: 55px;
   background-color: grey;
+  margin: 5px;
+  box-sizing: border-box;
 }
 
 .nav-segment .choices .pic-container img {
@@ -10187,12 +10193,23 @@ html {
   height: 100%;
 }
 
-.nav-segment {
-  border: 2px solid black;
+.nav-segment .choices .af img {
+  width: 80% !important;
+  height: 80% !important;
+  margin: 10%;
 }
 
 .nav-content {
   padding: 0;
+}
+
+.title {
+  color: white;
+  text-align: center;
+}
+
+.active-choice {
+  background-color: white !important;
 }
 
 .runepage img {
