@@ -17,5 +17,8 @@ sections:
       category:
         type: text
         display: category
+      order_number:
+        type: integer
+        display: 'Order Number'
 taxonomies: true
 title: 'Nav Choices'

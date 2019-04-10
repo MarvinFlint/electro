@@ -1,4 +1,4 @@
-<nav class="nav col-lg-3 col-md-6 col-sm-xs-12">
+<nav class="nav toggled col-xl-4 col-lg-6 col-md-6 col-sm-xs-12">
     <div class="col-12 nav-header">
         <div class="nav-toggle">
             <img class="toggle-pic" src="{{ theme:img src='navtoggle.png' }}">
@@ -9,8 +9,8 @@
         <div class="col-12 nav-segment choice">
             <h2 class="title segment-title">{{ segment_title_1 }}</h2>
             <div id="keystones" class="choices" title="{{ keystone_tooltip }}">                
-                {{ collection from="keystones" }}
-                <div id="{{ choice_id }}" class="keystone pic-container" title=" {{ choice_title }}">
+                {{ collection from="keystones" sort="order_number:asc"}}
+                <div id="{{ choice_id }}" class="keystone pic-container" title=" {{ choice_title }}" data-category="{{ category }}">
                     {{ assets:choice_picture }}
                     <img src="{{ url }}">
                     {{ /assets:choice_picture }}
@@ -45,7 +45,7 @@
         <div class="col-12 nav-segment choice">
             <h2 class="title segment-title">{{ segment_title_4 }}</h2>
             <div id="enemy" class="choices" title="{{ enemy_tooltip }}">
-                {{ collection from="enemy" sort="category"}}
+                {{ collection from="enemy" sort="order_number:asc"}}
                 <div id="{{ choice_id }}" class="enemy pic-container" title="{{ choice_title }}">
                     {{ assets:choice_picture }}
                     <img src="{{ url }}">
@@ -53,6 +53,7 @@
                 </div>
                 {{ /collection }}
             </div>
-        </div>       
+        </div>     
+        <button onclick="applySettings()">Apply</button>  
     </div>
 </nav>

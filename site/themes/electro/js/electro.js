@@ -3943,6 +3943,641 @@
   })));
   //# sourceMappingURL=bootstrap.js.map
   
+// Old switcher
+
+/*
+        if ($("#af-ap").hasClass("active-choice")) {
+            $(".ad").fadeOut();
+            // Level Selection: Keystones
+            if ($("#klepto").hasClass("active-choice")) {
+                // Level Selection: Lane
+                if ($("#toplane").hasClass("active-choice")) {
+                    //Level Selection: Enemy
+                    if ($("#tank").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#ewq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".top.klepto.tank").fadeIn(500);
+                    }
+                    if ($("#mage").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#qwe").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".top.klepto.mage").fadeIn(500);
+                    }
+                    if ($("#fighter").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#ewq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".top.klepto.fighter").fadeIn(500);
+                    }
+                    if ($("#adc").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#qwe").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".top.klepto.adc").fadeIn(500);
+                    }
+                    if ($("#assassin").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#ewq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".top.klepto.assassin").fadeIn(500);
+                    }
+
+                }
+                else if ($("#midlane").hasClass("active-choice")) {
+                    if ($("#tank").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#ewq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".mid.klepto.tank").fadeIn(500);
+                    }
+                    if ($("#mage").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#qwe").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".mid.klepto.mage").fadeIn(500);
+                    }
+                    if ($("#fighter").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#ewq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".mid.klepto.fighter").fadeIn(500);
+                    }
+                    if ($("#adc").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#qwe").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".mid.klepto.adc").fadeIn(500);
+                    }
+                    if ($("#assassin").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#ewq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".mid.klepto.assassin").fadeIn(500);
+                    }
+                }
+                else if ($("#botlane").hasClass("active-choice")) {
+                    if ($("#tank").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#ewq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".bot.klepto.tank").fadeIn(500);
+                    }
+                    if ($("#mage").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#qwe").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".bot.klepto.mage").fadeIn(500);
+                    }
+                    if ($("#fighter").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#ewq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".bot.klepto.fighter").fadeIn(500);
+                    }
+                    if ($("#adc").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#qwe").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".bot.klepto.adc").fadeIn(500);
+                    }
+                    if ($("#assassin").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#ewq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".bot.klepto.assassin").fadeIn(500);
+                    }
+                }
+                else {
+
+                }
+            } 
+            if ($("#electrocute").hasClass("active-choice")) {
+                // Level Selection: Lane
+                if ($("#toplane").hasClass("active-choice")) {
+                    //Level Selection: Enemy
+                    if ($("#tank").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#wqe").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".top.electrocute.tank").fadeIn(500);
+                    }
+                    if ($("#mage").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#qwe").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".top.electrocute.mage").fadeIn(500);
+                    }
+                    if ($("#fighter").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#weq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".top.electrocute.fighter").fadeIn(500);
+                    }
+                    if ($("#adc").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#qwe").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".top.electrocute.adc").fadeIn(500);
+                    }
+                    if ($("#assassin").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#qwe").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".top.electrocute.assassin").fadeIn(500);
+                    }
+
+                }
+                else if ($("#midlane").hasClass("active-choice")) {
+                    if ($("#tank").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#ewq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".mid.electrocute.tank").fadeIn(500);
+                    }
+                    if ($("#mage").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#qwe").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".mid.electrocute.mage").fadeIn(500);
+                    }
+                    if ($("#fighter").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#weq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".mid.electrocute.fighter").fadeIn(500);
+                    }
+                    if ($("#adc").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#qwe").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".mid.electrocute.adc").fadeIn(500);
+                    }
+                    if ($("#assassin").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#qwe").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".mid.electrocute.assassin").fadeIn(500);
+                    }
+                }
+                else if ($("#botlane").hasClass("active-choice")) {
+                    if ($("#tank").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#weq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".bot.electrocute.tank").fadeIn(500);
+                    }
+                    if ($("#mage").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#qwe").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".bot.electrocute.mage").fadeIn(500);
+                    }
+                    if ($("#fighter").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#weq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".bot.electrocute.fighter").fadeIn(500);
+                    }
+                    if ($("#adc").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#qwe").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".bot.electrocute.adc").fadeIn(500);
+                    }
+                    if ($("#assassin").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#weq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".bot.electrocute.assassin").fadeIn(500);
+                    }
+                }
+                else {
+
+                }
+            }   
+            if ($("#phaserush").hasClass("active-choice")) {
+                // Level Selection: Lane
+                if ($("#toplane").hasClass("active-choice")) {
+                    //Level Selection: Enemy
+                    if ($("#tank").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#weq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".top.phaserush.tank").fadeIn(500);
+                    }
+                    if ($("#mage").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#qwe").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".top.phaserush.mage").fadeIn(500);
+                    }
+                    if ($("#fighter").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#weq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".top.phaserush.fighter").fadeIn(500);
+                    }
+                    if ($("#adc").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#qwe").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".top.phaserush.adc").fadeIn(500);
+                    }
+                    if ($("#assassin").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#ewq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".top.phaserush.assassin").fadeIn(500);
+                    }
+
+                }
+                else if ($("#midlane").hasClass("active-choice")) {
+                    if ($("#tank").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#weq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".mid.phaserush.tank").fadeIn(500);
+                    }
+                    if ($("#mage").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#qwe").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".mid.phaserush.mage").fadeIn(500);
+                    }
+                    if ($("#fighter").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#weq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".mid.phaserush.fighter").fadeIn(500);
+                    }
+                    if ($("#adc").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#qwe").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".mid.phaserush.adc").fadeIn(500);
+                    }
+                    if ($("#assassin").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#ewq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".mid.phaserush.assassin").fadeIn(500);
+                    }
+                }
+                else if ($("#botlane").hasClass("active-choice")) {
+                    if ($("#tank").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#weq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".bot.phaserush.tank").fadeIn(500);
+                    }
+                    if ($("#mage").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#qwe").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".bot.phaserush.mage").fadeIn(500);
+                    }
+                    if ($("#fighter").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#weq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".bot.phaserush.fighter").fadeIn(500);
+                    }
+                    if ($("#adc").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#qwe").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".bot.phaserush.adc").fadeIn(500);
+                    }
+                    if ($("#assassin").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#weq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".bot.phaserush.assassin").fadeIn(500);
+                    }
+                }
+                else {
+
+                }
+            }   
+            if ($("#spellbook").hasClass("active-choice")) {
+                // Level Selection: Lane
+                if ($("#toplane").hasClass("active-choice")) {
+                    //Level Selection: Enemy
+                    if ($("#tank").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#weq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".top.spellbook.tank").fadeIn(500);
+                    }
+                    if ($("#mage").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#qwe").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".top.spellbook.mage").fadeIn(500);
+                    }
+                    if ($("#fighter").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#weq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".top.spellbook.fighter").fadeIn(500);
+                    }
+                    if ($("#adc").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#qwe").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".top.spellbook.adc").fadeIn(500);
+                    }
+                    if ($("#assassin").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#ewq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".top.spellbook.assassin").fadeIn(500);
+                    }
+
+                }
+                else if ($("#midlane").hasClass("active-choice")) {
+                    if ($("#tank").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#weq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".mid.spellbook.tank").fadeIn(500);
+                    }
+                    if ($("#mage").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#qwe").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".mid.spellbook.mage").fadeIn(500);
+                    }
+                    if ($("#fighter").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#weq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".mid.spellbook.fighter").fadeIn(500);
+                    }
+                    if ($("#adc").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#qwe").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".mid.spellbook.adc").fadeIn(500);
+                    }
+                    if ($("#assassin").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#ewq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".mid.spellbook.assassin").fadeIn(500);
+                    }
+                }
+                else if ($("#botlane").hasClass("active-choice")) {
+                    if ($("#tank").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#weq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".bot.spellbook.tank").fadeIn(500);
+                    }
+                    if ($("#mage").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#qwe").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".bot.spellbook.mage").fadeIn(500);
+                    }
+                    if ($("#fighter").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#weq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".bot.spellbook.fighter").fadeIn(500);
+                    }
+                    if ($("#adc").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#qwe").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".bot.spellbook.adc").fadeIn(500);
+                    }
+                    if ($("#assassin").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#ewq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".bot.spellbook.assassin").fadeIn(500);
+                    }
+                }
+                else {
+
+                }
+            }               
+        }
+        else if ($("#af-ad").hasClass("active-choice")) {
+            $(".ap").fadeOut();
+            if ($("#pta").hasClass("active-choice")) {
+                // Level Selection: Lane
+                if ($("#toplane").hasClass("active-choice")) {
+                    //Level Selection: Enemy
+                    if ($("#tank").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#weq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".top.pta.tank").fadeIn(500);
+                    }
+                    if ($("#mage").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#weq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".top.pta.mage").fadeIn(500);
+                    }
+                    if ($("#fighter").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#ewq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".top.pta.fighter").fadeIn(500);
+                    }
+                    if ($("#adc").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#weq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".top.pta.adc").fadeIn(500);
+                    }
+                    if ($("#assassin").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#ewq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".top.pta.assassin").fadeIn(500);
+                    }
+
+                }
+                else if ($("#midlane").hasClass("active-choice")) {
+                    if ($("#tank").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#weq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".mid.pta.tank").fadeIn(500);
+                    }
+                    if ($("#mage").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#weq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".mid.pta.mage").fadeIn(500);
+                    }
+                    if ($("#fighter").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#ewq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".mid.pta.fighter").fadeIn(500);
+                    }
+                    if ($("#adc").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#weq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".mid.pta.adc").fadeIn(500);
+                    }
+                    if ($("#assassin").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#ewq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".mid.pta.assassin").fadeIn(500);
+                    }
+                }
+                else if ($("#botlane").hasClass("active-choice")) {
+                    if ($("#tank").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#weq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".bot.pta.tank").fadeIn(500);
+                    }
+                    if ($("#mage").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#weq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".bot.pta.mage").fadeIn(500);
+                    }
+                    if ($("#fighter").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#ewq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".bot.pta.fighter").fadeIn(500);
+                    }
+                    if ($("#adc").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#weq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".bot.pta.adc").fadeIn(500);
+                    }
+                    if ($("#assassin").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#ewq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".bot.pta.assassin").fadeIn(500);
+                    }
+                }
+                else {
+
+                }
+            } 
+            if ($("#fleet").hasClass("active-choice")) {
+                // Level Selection: Lane
+                if ($("#toplane").hasClass("active-choice")) {
+                    //Level Selection: Enemy
+                    if ($("#tank").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#weq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".top.fleet.tank").fadeIn(500);
+                    }
+                    if ($("#mage").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#weq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".top.fleet.mage").fadeIn(500);
+                    }
+                    if ($("#fighter").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#ewq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".top.fleet.fighter").fadeIn(500);
+                    }
+                    if ($("#adc").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#weq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".top.fleet.adc").fadeIn(500);
+                    }
+                    if ($("#assassin").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#ewq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".top.fleet.assassin").fadeIn(500);
+                    }
+
+                }
+                else if ($("#midlane").hasClass("active-choice")) {
+                    if ($("#tank").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#weq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".mid.fleet.tank").fadeIn(500);
+                    }
+                    if ($("#mage").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#weq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".mid.fleet.mage").fadeIn(500);
+                    }
+                    if ($("#fighter").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#ewq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".mid.fleet.fighter").fadeIn(500);
+                    }
+                    if ($("#adc").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#weq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".mid.fleet.adc").fadeIn(500);
+                    }
+                    if ($("#assassin").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#ewq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".mid.fleet.assassin").fadeIn(500);
+                    }
+                }
+                else if ($("#botlane").hasClass("active-choice")) {
+                    if ($("#tank").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#weq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".bot.fleet.tank").fadeIn(500);
+                    }
+                    if ($("#mage").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#weq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".bot.fleet.mage").fadeIn(500);
+                    }
+                    if ($("#fighter").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#ewq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".bot.fleet.fighter").fadeIn(500);
+                    }
+                    if ($("#adc").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#weq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".bot.fleet.adc").fadeIn(500);
+                    }
+                    if ($("#assassin").hasClass("active-choice")) {
+                        $(".abilityMax").fadeOut(500);
+                        $("#ewq").fadeIn(500);
+                        $(".gameplay-section").fadeOut(500);
+                        $(".bot.fleet.assassin").fadeIn(500);
+                    }
+                }
+                else {
+
+                }
+            } 
+        }
+        */
 /*!
  * jQuery JavaScript Library v3.3.1
  * https://jquery.com/
@@ -14308,35 +14943,84 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
-// Collapsing / Opening the navigation
+// Collapsing / Opening the navigation, closing the warning
 
-$(function(){
-    $(".nav-toggle").click(function(){
-        $(".nav").css('max-width','50px');
-        console.log("test");
+$(document).ready(function () {
+    $(".nav-toggle").click(function () {
+        if ($(".nav").hasClass("toggled")) {
+            $(".nav").removeClass("toggled");
+            $(".nav-content").css("opacity", "1");
+        }
+        else {
+            $(".nav").addClass("toggled");
+            $(".nav-content").css("opacity", "0");
+        }
+    })
+    $(".disable-warning").click(function () {
+        $(".warning").fadeOut(500)
     })
 })
 
 // Navigation points
 
-$(document).ready(function(){
-    $('.pic-container').click(function(){
-        if( $(this).hasClass("keystone") ){
+$(document).ready(function () {
+    $('.pic-container').click(function () {
+        if ($(this).hasClass("keystone")) {
+            // Change background of navigation point
             $(".keystone").removeClass("active-choice");
             $(this).addClass("active-choice");
+
+            // Assigning the associated ID with the panel
+            clickedEle = $(this).attr("id");
+            
+            
         }
-        else if ( $(this).hasClass("lane") ){
-            $(".lane").removeClass(".active-choice");
+        else if ($(this).hasClass("lane")) {
+            // Change background of navigation point
+            $(".lane").removeClass("active-choice");
             $(this).addClass("active-choice");
         }
-        else if ( $(this).hasClass("af") ){
-            $(".af").removeClass(".active-choice");
+        else if ($(this).hasClass("af")) {
+            // Change background of navigation point
+            $(".af").removeClass("active-choice");
             $(this).addClass("active-choice");
         }
-        else if ( $(this).hasClass("enemy") ){
-            $(".enemy").removeClass(".active-choice");
+        else if ($(this).hasClass("enemy")) {
+            // Change background of navigation point
+            $(".enemy").removeClass("active-choice");
             $(this).addClass("active-choice");
         }
+
+        // Display ability max panels and other content
+        $selectedLane = $(".lane.active-choice").attr("id");
+
+        $selectedKeystone = $(".keystone.active-choice").attr("id");
+
+        $selectedForce = $(".af.active-choice").attr("id");
+
+        $selectedEnemy = $(".enemy.active-choice").attr("id");
+       
+        console.log($selectedLane, $selectedEnemy, $selectedForce, $selectedKeystone);
     })
 })
+function applySettings() {
+    // Get the height of the selected element and set the container to the same height
+    // This is to keep the runepages in the same place while switching and keeping
+    // the DOM structure in place
+    elementHeight = $("." + clickedEle + "-rune").height();
+    $("#runepages").height(elementHeight);
+
+    // Display the selected runepage via the IDs set in the ControlPanel            
+    $(".runepage").fadeOut(500);
+    $("." + clickedEle + "-rune").fadeIn(500);
+
+    //Display the gameplay section
+    $(".gameplay-section").fadeOut(500);
+    $("." + $selectedLane + "." + $selectedKeystone + "." + $selectedEnemy).fadeIn(500);
+
+    //Display Appropriate builds
+    $(".itembuild").fadeOut(500);
+    $("." + $selectedForce + ".itembuild").fadeIn(500);
+    $("." + $selectedForce + ".sit-item").fadeIn(500);
+}
 //# sourceMappingURL=electro.js.map

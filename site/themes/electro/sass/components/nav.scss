@@ -8,12 +8,19 @@
     display:flex;
     flex-direction: column;
     border: 2px solid green;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     padding: 0;
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.85);
+    transition: 2s all;
+    .nav-header{
+        padding: 0;
+        img{
+            margin-left: 1vw;
+        }
+    }
 }
 .nav-segment{
     display: flex;
@@ -47,6 +54,8 @@
 
 .nav-content{
     padding: 0;
+    transition: 1s all ease;
+    opacity: 0;
 }
 .title{
     color: white;
@@ -54,4 +63,19 @@
 }
 .active-choice{
     background-color: white !important;
+}
+.toggled{
+    width: 5vw;
+    transition: all 1s;
+}
+
+@media only screen and (max-width:640px){
+    .nav{
+        min-height: 0;
+        height: auto;
+        width: 100vw;
+    }
+    .toggled{
+        height: 70px;        
+    }
 }

@@ -1,9 +1,11 @@
 <div class="home">
-    <div class="section container-fluid">
-        <div class="section-content row" id="abilitymax">
-            {{ partial:abilityMax }}
-        </div>
-    </div>
+    <div class="warning col-lg-3 col-md-4 col-sm-xs-10 center-content">
+        <p>
+            You have chosen an...unusual combination. Results will still update,
+            but be aware that what you try to do likely is bad. 
+        </p>   
+        <div class="disable-warning">X</div>     
+    </div>    
     <div class="section container-fluid">
         <div class="section-content row" id="runepages">
             {{ partial:runePanels }}
@@ -19,6 +21,16 @@
             {{ partial:situationalItems }}
         </div>
     </div>
+    <div class="section container-fluid">
+        <div class="section-content row" id="gameplay">
+            {{ partial:gameplay }}
+        </div>
+    </div>
+    <div class="section container-fluid">
+            <div class="section-content row" id="abilitymax">
+                {{ partial:abilityMax }}
+            </div>
+        </div>
     <div class="section contaner-fluid">
         <div class="section-content row" id="matchups">
             {{ partial:matchups }}

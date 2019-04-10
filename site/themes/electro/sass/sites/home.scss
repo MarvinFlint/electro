@@ -1,0 +1,55 @@
+.home{
+    width: 90vw;
+    margin: 0 5vw;
+    .section{
+        position: relative;
+        padding: 35px 0;
+        .row{
+            .centered{
+                margin: 0 auto;
+            }            
+            .itembuild{
+                display: none;
+                
+            }
+            .sit-item{
+                display: none;
+                p{
+                    padding: 15px;
+                }             
+            }
+            .gameplay-section{
+                display: none;
+            }
+            .ab-max{
+                display: none;
+            }
+            .matchup{
+                display: none;
+            }
+        }        
+    }
+    .warning{
+        display:none;
+        position: fixed;
+        top: 10%;
+        left: 50%;
+        margin: 0 auto;
+        background-color: #ff00008a;
+        color: white;
+        transform: translate(-50%,-50%);
+        border-radius: 18px;
+        z-index: 2;  
+        .disable-warning{
+            cursor: pointer;
+        }
+    }
+}
+.build-title{
+    color: black;
+}
+.center-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

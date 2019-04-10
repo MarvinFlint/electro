@@ -10159,12 +10159,21 @@ html {
   display: flex;
   flex-direction: column;
   border: 2px solid green;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   padding: 0;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.85);
+  transition: 2s all;
+}
+
+.nav .nav-header {
+  padding: 0;
+}
+
+.nav .nav-header img {
+  margin-left: 1vw;
 }
 
 .nav-segment {
@@ -10201,6 +10210,8 @@ html {
 
 .nav-content {
   padding: 0;
+  transition: 1s all ease;
+  opacity: 0;
 }
 
 .title {
@@ -10212,8 +10223,117 @@ html {
   background-color: white !important;
 }
 
+.toggled {
+  width: 5vw;
+  transition: all 1s;
+}
+
+@media only screen and (max-width: 640px) {
+  .nav {
+    min-height: 0;
+    height: auto;
+    width: 100vw;
+  }
+  .toggled {
+    height: 70px;
+  }
+}
+
+.runepage {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .runepage img {
   max-width: 100%;
+}
+
+.runepage .row div {
+  justify-content: center;
+  align-items: center;
+}
+
+#itembuilds .itembuild {
+  padding: 15px;
+  border: 1px solid black;
+  margin: 0 auto;
+}
+
+#itembuilds .itembuild img {
+  max-width: 40px;
+}
+
+@media screen and (max-width: 960px) {
+  .itembuild {
+    margin-top: 20px !important;
+  }
+}
+
+.home {
+  width: 90vw;
+  margin: 0 5vw;
+}
+
+.home .section {
+  position: relative;
+  padding: 35px 0;
+}
+
+.home .section .row .centered {
+  margin: 0 auto;
+}
+
+.home .section .row .itembuild {
+  display: none;
+}
+
+.home .section .row .sit-item {
+  display: none;
+}
+
+.home .section .row .sit-item p {
+  padding: 15px;
+}
+
+.home .section .row .gameplay-section {
+  display: none;
+}
+
+.home .section .row .ab-max {
+  display: none;
+}
+
+.home .section .row .matchup {
+  display: none;
+}
+
+.home .warning {
+  display: none;
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  margin: 0 auto;
+  background-color: #ff00008a;
+  color: white;
+  transform: translate(-50%, -50%);
+  border-radius: 18px;
+  z-index: 2;
+}
+
+.home .warning .disable-warning {
+  cursor: pointer;
+}
+
+.build-title {
+  color: black;
+}
+
+.center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*# sourceMappingURL=electro.css.map */

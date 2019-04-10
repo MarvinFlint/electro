@@ -13,7 +13,10 @@
     <meta name="description" content="Another awesome Statamic site">
     <title>{{ title or site_title }}</title>
     <link rel="stylesheet" href="{{ theme:css }}">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <link rel="icon" href="{{ theme:img src='favicon.jpg' }}"">
+    
 </head>
 
 
@@ -24,10 +27,10 @@
     {{ template_content }}
 
     {{ partial:footer }}
+    
+    <script src=" {{ theme:js }}">
+    </script>
 
-
-    <script src="{{ theme:js }}"></script>
-
-</body>
+    </body>
 
 </html>

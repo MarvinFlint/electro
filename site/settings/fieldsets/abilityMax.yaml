@@ -2,26 +2,17 @@ sections:
   main:
     display: Main
     fields:
-      maxfirst:
+      ability_max_pic:
         restrict: false
         type: assets
-        display: 'First Max'
+        display: 'ability pictures'
         container: main
         folder: AbilityAssets
-      maxsecond:
-        restrict: false
-        type: assets
-        display: 'Second Max'
-        container: main
-        folder: AbilityAssets
-      maxthird:
-        restrict: false
-        type: assets
-        display: 'Third Max'
-        container: main
-        folder: AbilityAssets
-      panelID:
+      orderID:
         type: text
-        display: 'Panel ID'
+        display: orderID
+      field_3:
+        type: select
+        display: 'Field 3'
 taxonomies: true
 title: 'Ability Max Order'

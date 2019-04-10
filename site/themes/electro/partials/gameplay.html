@@ -1,0 +1,19 @@
+{{ collection from="gameplay" }}
+<div class="col-12 gameplay-section {{ designated_lane }} {{ gp_rune }} {{ against_classes }} {{ gp_playstyle }}" data-max="{{ gp_max }}">
+    <div class="row">
+        <div class="col-lg-6 flex-column">
+            <h2>{{ lane_headline }}</h2>
+            <p>
+                {{ lane_text }}
+            </p>
+        </div>
+
+        <div class="col-lg-6 flex-column">
+            <h2>{{ game_headline }}</h2>
+            <p>
+                {{ game_text }}
+            </p>
+        </div>
+    </div>    
+</div>
+{{ /collection }}

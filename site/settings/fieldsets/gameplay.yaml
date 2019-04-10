@@ -1,0 +1,34 @@
+sections:
+  main:
+    display: Main
+    fields:
+      lane_headline:
+        type: text
+        width: 50
+        display: 'Lane Headline'
+      game_headline:
+        type: text
+        width: 50
+        display: 'Game Headline'
+      lane_text:
+        type: textarea
+        width: 50
+        display: 'Lane Text'
+      game_text:
+        type: textarea
+        width: 50
+        display: 'Game Text'
+      gp_playstyle:
+        type: text
+        display: 'Associated Playstyle'
+      against_classes:
+        type: text
+        display: 'Against Classes'
+      gp_rune:
+        type: text
+        display: 'Associated Rune'
+      designated_lane:
+        type: text
+        display: 'Designated Lane'
+taxonomies: true
+title: Gameplay

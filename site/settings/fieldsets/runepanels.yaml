@@ -14,5 +14,8 @@ sections:
       rune_panel_text:
         type: textarea
         display: 'Runepanel Text'
+      role:
+        type: text
+        display: 'Designated Role'
 taxonomies: true
 title: Runepanels

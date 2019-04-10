@@ -1,17 +1,7 @@
-{{ collection from="abilityMax"}}
-<div id="{{ panelID }}" class="container-fluid abilityMax">
-    <div class="row">
-        <div>
-            {{ assets:maxfirst }}
-            <img id="ab-first" src="{{ url }}">
-            {{ /assets:maxfirst }}
-            {{ assets:maxsecond }}
-            <img id="ab-second" src="{{ url }}">
-            {{ /assets:maxsecond }}
-            {{ assets:maxthird }}
-            <img id="ab-third" src="{{ url }}">
-            {{ /assets:maxthird }}
-        </div>
-    </div>
+{{ collection from="abilityMax" }}
+<div id="{{ orderID }}" class="ab-max">
+    {{ assets:ability_max_pic }}
+    <img src="{{ url }}">
+    {{ /assets:ability_max_pic }}
 </div>
 {{ /collection }}
