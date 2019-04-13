@@ -10158,8 +10158,7 @@ html {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  border: 2px solid green;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   padding: 0;
@@ -10170,17 +10169,20 @@ html {
 
 .nav .nav-header {
   padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav .nav-header img {
-  margin-left: 1vw;
+  max-width: 55px;
+  height: auto;
 }
 
 .nav-segment {
   display: flex;
   flex-direction: column;
-  padding: 0;
-  border: 1px solid white;
+  padding: 15px;
 }
 
 .nav-segment .choices {
@@ -10192,9 +10194,9 @@ html {
 .nav-segment .choices .pic-container {
   height: 55px;
   width: 55px;
-  background-color: grey;
-  margin: 5px;
+  background-color: #b0b0b0;
   box-sizing: border-box;
+  transition: all 1s;
 }
 
 .nav-segment .choices .pic-container img {
@@ -10212,6 +10214,16 @@ html {
   padding: 0;
   transition: 1s all ease;
   opacity: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-content button {
+  margin: 15px auto;
+  width: 150px;
+  height: 45px;
+  border: 1px solid #7300ff;
+  font-size: 18px;
 }
 
 .title {
@@ -10221,6 +10233,8 @@ html {
 
 .active-choice {
   background-color: white !important;
+  box-shadow: inset 0px 0px 20px 10px #7300ff;
+  transition: all 1s;
 }
 
 .toggled {
@@ -10235,7 +10249,8 @@ html {
     width: 100vw;
   }
   .toggled {
-    height: 70px;
+    height: 35px;
+    position: fixed;
   }
 }
 
@@ -10273,12 +10288,12 @@ html {
 
 .home {
   width: 90vw;
-  margin: 0 5vw;
+  margin: 50px 5vw;
 }
 
 .home .section {
   position: relative;
-  padding: 35px 0;
+  padding: 0 0 35px;
 }
 
 .home .section .row .centered {

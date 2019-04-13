@@ -3,16 +3,15 @@
     <div class="row">
         <div class="col-lg-6 flex-column">
             <h2>{{ lane_headline }}</h2>
-            <p>
-                {{ lane_text }}
-            </p>
+                {{ lane_text | markdown }}
+            
         </div>
 
         <div class="col-lg-6 flex-column">
             <h2>{{ game_headline }}</h2>
-            <p>
-                {{ game_text }}
-            </p>
+            
+                {{ game_text | markdown }}
+            
         </div>
     </div>    
 </div>

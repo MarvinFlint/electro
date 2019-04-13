@@ -5,11 +5,13 @@ $(document).ready(function () {
         if ($(".nav").hasClass("toggled")) {
             $(".nav").removeClass("toggled");
             $(".nav-content").css("opacity", "1");
+            $("html, body").animate({ scrollTop: 0 }, "slow");
         }
         else {
             $(".nav").addClass("toggled");
             $(".nav-content").css("opacity", "0");
         }
+        
     })
     $(".disable-warning").click(function () {
         $(".warning").fadeOut(500)
@@ -77,4 +79,7 @@ function applySettings() {
     $(".itembuild").fadeOut(500);
     $("." + $selectedForce + ".itembuild").fadeIn(500);
     $("." + $selectedForce + ".sit-item").fadeIn(500);
+
+    // Scroll to top
+    $("html, body").animate({ scrollTop: 0 }, "slow");
 }

@@ -11,11 +11,11 @@ sections:
       panelID:
         type: text
         display: 'Panel ID'
-      rune_panel_text:
-        type: textarea
-        display: 'Runepanel Text'
       role:
         type: text
         display: 'Designated Role'
+      rune_panel_text:
+        type: textarea
+        display: 'Rune Panel Text'
 taxonomies: true
 title: Runepanels

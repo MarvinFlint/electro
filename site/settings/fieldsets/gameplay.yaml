@@ -11,11 +11,15 @@ sections:
         width: 50
         display: 'Game Headline'
       lane_text:
-        type: textarea
+        cheatsheet: false
+        restrict_assets: false
+        type: markdown
         width: 50
         display: 'Lane Text'
       game_text:
-        type: textarea
+        cheatsheet: false
+        restrict_assets: false
+        type: markdown
         width: 50
         display: 'Game Text'
       gp_playstyle:
