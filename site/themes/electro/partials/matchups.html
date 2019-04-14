@@ -1,14 +1,30 @@
-<div id="{{ panelID }}" class="container-fluid matchup">
-    <div class="row">
-        <div class="matchup-selector col-12">
-
-        </div>
-        <div class="col-12 matchup-content">
-            <ul class="matchup-panels">
-                <li>Runes</li>
-                <li>Ability Max</li>
-                <li>Details</li>
-            </ul>
-        </div>
+{{ collection from="matchups" }}
+<div id="{{ panelID }}" data-champion="{{ title }}" class="{{ title }} container-fluid matchup">
+  <div class="row">
+    <div class="col-12 matchup-switcher">
+      <ul class="matchup-panels">
+        <li>Runes</li>
+        <li>Ability Max</li>
+        <li>Details</li>
+      </ul>
     </div>
+    <div class="col-12 matchup-content">
+      <div class="matchup-runes">
+        {{ assets:matchup_runes }}
+        <img src="{{ url }}">
+        {{ /assets:matchup_runes }}
+        {{ matchup_rune_text | markdown }}
+      </div>
+      <div class="matchup-ability">
+        {{ assets:matchup_ability }}
+        <img src="{{ url }}">
+        {{ /assets:matchup_ability }}
+        {{ matchup_ability_text | markdown }}
+      </div>
+      <div class="matchup-details">
+        {{ matchup_details_text | markdown }}
+      </div>
+    </div>
+  </div>
 </div>
+{{ /collection }}
