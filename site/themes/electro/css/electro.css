@@ -10240,6 +10240,7 @@ html {
 .toggled {
   width: 5vw;
   transition: all 1s;
+  position: fixed;
 }
 
 @media only screen and (max-width: 640px) {
@@ -10250,7 +10251,6 @@ html {
   }
   .toggled {
     height: 35px;
-    position: fixed;
   }
 }
 

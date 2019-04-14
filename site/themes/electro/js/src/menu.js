@@ -82,4 +82,8 @@ function applySettings() {
 
     // Scroll to top
     $("html, body").animate({ scrollTop: 0 }, "slow");
+
+    // Close the menu
+    $(".nav").addClass("toggled");
+    $(".nav-content").css("opacity", "0");
 }
