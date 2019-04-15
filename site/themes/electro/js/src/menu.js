@@ -23,6 +23,9 @@ $(document).ready(function () {
 $(document).ready(function () {
     $('.pic-container').click(function () {
         if ($(this).hasClass("keystone")) {
+            if($(this).hasClass("active-choice")){
+                $(".keystone").slideDown(500);
+            }
             // Change background of navigation point
             $(".keystone").removeClass("active-choice");
             $(this).addClass("active-choice");
@@ -58,6 +61,7 @@ $(document).ready(function () {
         $selectedEnemy = $(".enemy.active-choice").attr("id");
        
         console.log($selectedLane, $selectedEnemy, $selectedForce, $selectedKeystone);
+    
     })
 })
 function applySettings() {
@@ -77,13 +81,12 @@ function applySettings() {
 
     //Display Appropriate builds
     $(".itembuild").fadeOut(500);
+    $(".sit-item").fadeOut(500);
     $("." + $selectedForce + ".itembuild").fadeIn(500);
     $("." + $selectedForce + ".sit-item").fadeIn(500);
 
     // Scroll to top
     $("html, body").animate({ scrollTop: 0 }, "slow");
 
-    // Close the menu
-    $(".nav").addClass("toggled");
-    $(".nav-content").css("opacity", "0");
+    
 }

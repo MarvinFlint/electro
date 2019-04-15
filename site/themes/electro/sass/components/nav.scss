@@ -3,42 +3,37 @@
   margin: 0;
 }
 .nav {
-  min-height: 100vh;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: 0;
+  position: fixed;
+  top: 10vh;
   left: 0;
   padding: 0;
-  z-index: 1;
-  background-color: rgba(0, 0, 0, 0.85);
-  transition: 2s all;
-  .nav-header {
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    img {
-      max-width: 55px;
-      height: auto;
-    }
-  }
+  z-index: 1;    
 }
 .nav-segment {
   display: flex;
   flex-direction: column;
   padding: 15px;
   .choices {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: flex;    
+    justify-content: flex-end;
+    height: 55px;
+    position: relative;
     .pic-container {
       height: 55px;
       width: 55px;
       background-color: #b0b0b0;
       box-sizing: border-box;
       transition: all 1s;
+      border-radius: 50%;
+      margin: 2px;
+      overflow: hidden;
+      position: absolute;
+      top:0;
+      left:0;
+      z-index: 1;
       img {
         width: 100%;
         height: 100%;
@@ -57,7 +52,6 @@
 .nav-content {
   padding: 0;
   transition: 1s all ease;
-  opacity: 0;
   display: flex;
   flex-direction: column;
   button {
@@ -72,6 +66,7 @@
   color: white;
   text-align: center;
   font-family: 'AdamCG';
+  display: none;
 }
 .active-choice {
   background-color: white !important;
@@ -79,6 +74,9 @@
   -moz-box-shadow: inset 0px 0px 20px 10px rgba(115, 0, 255, 1);
   box-shadow: inset 0px 0px 20px 10px rgba(115, 0, 255, 1);
   transition: all 1s;
+  z-index: 2 !important;
+  display: block !important;
+
 }
 .toggled {
   width: 5vw;

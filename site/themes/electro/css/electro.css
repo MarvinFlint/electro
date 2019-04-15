@@ -10159,29 +10159,14 @@ html {
 }
 
 .nav {
-  min-height: 100vh;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: 0;
+  position: fixed;
+  top: 10vh;
   left: 0;
   padding: 0;
   z-index: 1;
-  background-color: rgba(0, 0, 0, 0.85);
-  transition: 2s all;
-}
-
-.nav .nav-header {
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.nav .nav-header img {
-  max-width: 55px;
-  height: auto;
 }
 
 .nav-segment {
@@ -10192,8 +10177,9 @@ html {
 
 .nav-segment .choices {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
+  height: 55px;
+  position: relative;
 }
 
 .nav-segment .choices .pic-container {
@@ -10202,6 +10188,13 @@ html {
   background-color: #b0b0b0;
   box-sizing: border-box;
   transition: all 1s;
+  border-radius: 50%;
+  margin: 2px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .nav-segment .choices .pic-container img {
@@ -10218,7 +10211,6 @@ html {
 .nav-content {
   padding: 0;
   transition: 1s all ease;
-  opacity: 0;
   display: flex;
   flex-direction: column;
 }
@@ -10235,12 +10227,15 @@ html {
   color: white;
   text-align: center;
   font-family: 'AdamCG';
+  display: none;
 }
 
 .active-choice {
   background-color: white !important;
   box-shadow: inset 0px 0px 20px 10px #7300ff;
   transition: all 1s;
+  z-index: 2 !important;
+  display: block !important;
 }
 
 .toggled {
