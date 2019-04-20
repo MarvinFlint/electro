@@ -10177,7 +10177,7 @@ html {
 
 .nav-segment .choices {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: row;
   height: 55px;
   position: relative;
 }
@@ -10195,6 +10195,7 @@ html {
   top: 0;
   left: 0;
   z-index: 1;
+  order: 2;
 }
 
 .nav-segment .choices .pic-container img {
@@ -10236,6 +10237,7 @@ html {
   transition: all 1s;
   z-index: 2 !important;
   display: block !important;
+  order: 1 !important;
 }
 
 .toggled {

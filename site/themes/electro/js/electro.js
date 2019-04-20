@@ -14956,7 +14956,7 @@ $(document).ready(function () {
             $(".nav").addClass("toggled");
             $(".nav-content").css("opacity", "0");
         }
-        
+
     })
     $(".disable-warning").click(function () {
         $(".warning").fadeOut(500)
@@ -14968,7 +14968,7 @@ $(document).ready(function () {
 $(document).ready(function () {
     $('.pic-container').click(function () {
         if ($(this).hasClass("keystone")) {
-            if($(this).hasClass("active-choice")){
+            if ($(this).hasClass("active-choice")) {
                 $(".keystone").slideDown(500);
             }
             // Change background of navigation point
@@ -14977,8 +14977,8 @@ $(document).ready(function () {
 
             // Assigning the associated ID with the panel
             clickedEle = $(this).attr("id");
-            
-            
+
+
         }
         else if ($(this).hasClass("lane")) {
             // Change background of navigation point
@@ -15004,9 +15004,8 @@ $(document).ready(function () {
         $selectedForce = $(".af.active-choice").attr("id");
 
         $selectedEnemy = $(".enemy.active-choice").attr("id");
-       
+
         console.log($selectedLane, $selectedEnemy, $selectedForce, $selectedKeystone);
-    
     })
 })
 function applySettings() {
@@ -15032,7 +15031,23 @@ function applySettings() {
 
     // Scroll to top
     $("html, body").animate({ scrollTop: 0 }, "slow");
-
-    
 }
+
+$(document).ready(function () {
+    $(".pic-container").click(function () {
+        if ($(this).hasClass("active-choice")) {
+            if ($(this).parent().hasClass("opened")) {
+                $(this).parent().removeClass("opened");
+                $(this).css("position", "absolute");
+                $(this).siblings().css("position", "absolute");
+            }
+            else {
+                $(this).parent().addClass("opened");
+                $(this).css("position", "unset");
+                $(this).siblings().css("position", "unset");
+            }
+        }
+    })
+})   
+
 //# sourceMappingURL=electro.js.map
