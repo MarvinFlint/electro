@@ -10163,7 +10163,7 @@ html {
   display: flex;
   flex-direction: column;
   position: fixed;
-  top: 10vh;
+  top: 24vh;
   left: 0;
   padding: 0;
   z-index: 1;
@@ -10217,11 +10217,16 @@ html {
 }
 
 .nav-content button {
-  margin: 15px auto;
-  width: 150px;
-  height: 45px;
+  margin: 0 15px;
+  width: 55px;
+  height: auto;
   border: 1px solid #7300ff;
   font-size: 18px;
+}
+
+.nav-content button img {
+  width: 66%;
+  height: auto;
 }
 
 .title {
@@ -10248,12 +10253,26 @@ html {
 
 @media only screen and (max-width: 640px) {
   .nav {
-    min-height: 0;
-    height: auto;
     width: 100vw;
+    left: 0;
+    top: 0;
   }
-  .toggled {
-    height: 35px;
+  .nav .nav-content {
+    flex-direction: row;
+    padding-left: 15px;
+  }
+  .nav .nav-content .nav-segment {
+    padding: 15px 0;
+  }
+  .nav .nav-content .nav-segment .choices {
+    height: auto;
+    flex-direction: column;
+  }
+  .nav .nav-content button {
+    width: unset;
+    margin: 15px;
+    height: 55px;
+    max-width: 276px;
   }
 }
 

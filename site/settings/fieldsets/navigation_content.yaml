@@ -1,11 +1,17 @@
 title: globals
 sections:
   nav_header:
-    display: 'Nav Header'
+    display: 'Nav General'
     fields:
       navigation_title:
         type: text
         display: 'Navigation Title'
+      applypic:
+        container: main
+        folder: /
+        restrict: false
+        type: assets
+        display: 'Apply Icon'
   keystone_segment:
     display: 'Keystone Segment'
     fields:
