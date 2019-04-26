@@ -1,21 +1,19 @@
 // Collapsing / Opening the navigation, closing the warning
 
 $(document).ready(function () {
-    $(".nav-toggle").click(function () {
-        if ($(".nav").hasClass("toggled")) {
+    $(".toggle").attr('data-after', '<<');
+    $(".toggle").click(function(){
+        if($(".nav").hasClass("toggled")){
             $(".nav").removeClass("toggled");
-            $(".nav-content").css("opacity", "1");
-            $("html, body").animate({ scrollTop: 0 }, "slow");
+            $(".toggle").attr('data-after', '>>');
+            $(".choice, .nav-button").slideUp(500);
         }
-        else {
+        else{
             $(".nav").addClass("toggled");
-            $(".nav-content").css("opacity", "0");
+            $(".toggle").attr('data-after', '<<')
+            $(".choice, .nav-button").slideDown(500);
         }
-
-    })
-    $(".disable-warning").click(function () {
-        $(".warning").fadeOut(500)
-    })
+    })    
 })
 
 // Navigation points
@@ -88,6 +86,7 @@ function applySettings() {
     $("html, body").animate({ scrollTop: 0 }, "slow");
 }
 
+//Opening / closing the different navigation options
 $(document).ready(function () {
     $(".pic-container").click(function () {
         if ($(this).hasClass("active-choice")) {
@@ -104,3 +103,4 @@ $(document).ready(function () {
         }
     })
 })   
+

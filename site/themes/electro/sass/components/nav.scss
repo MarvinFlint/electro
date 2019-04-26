@@ -84,9 +84,16 @@
   order: 1 !important;
 }
 .toggled {
-  width: 5vw;
-  transition: all 1s;  
+}
+
+.toggle{
+  position: relative;
+  height: 25px;
+}
+.toggle::after{
+  content: attr(data-after);
   position: fixed;
+  left: 15px;
 }
 
 @media only screen and (max-width: 640px) {   
