@@ -10209,6 +10209,10 @@ html {
   margin: 10%;
 }
 
+.nav-segment .choices div:nth-child(1) {
+  z-index: 2;
+}
+
 .nav-content {
   padding: 0;
   transition: 1s all ease;

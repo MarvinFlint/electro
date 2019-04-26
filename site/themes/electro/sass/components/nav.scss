@@ -48,6 +48,10 @@
       }
     }
   }
+  
+  .choices div:nth-child(1){
+    z-index: 2;
+  }
 }
 
 .nav-content {
@@ -83,8 +87,7 @@
   display: block !important;
   order: 1 !important;
 }
-.toggled {
-}
+
 
 .toggle{
   position: relative;
@@ -110,7 +113,7 @@
         .choices{
           height: auto;
           flex-direction: column;
-        }        
+        }
       }
       button{
         width: unset;

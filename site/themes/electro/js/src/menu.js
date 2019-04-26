@@ -104,3 +104,15 @@ $(document).ready(function () {
     })
 })   
 
+// CHeck for clicks outside of the selections and close them
+$(document).mouseup(function(e) 
+{
+    var container = $(".pic-container");
+
+    // if the target of the click isn't the container nor a descendant of the container
+    if (!container.is(e.target) && container.has(e.target).length === 0) 
+    {
+        $(".pic-container").css("position", "absolute");
+        $(".pic-container").parent().removeClass("opened");
+    }
+});
