@@ -10154,12 +10154,17 @@ html {
 }
 
 img {
-  user-drag: none;
   user-select: none;
   -moz-user-select: none;
   -webkit-user-drag: none;
   -webkit-user-select: none;
   -ms-user-select: none;
+}
+
+body {
+  background-image: url("/assets/backgrounds/arctic_ops.jpg");
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 * {
@@ -10341,6 +10346,7 @@ img {
 .home .section {
   position: relative;
   padding: 0 0 35px;
+  color: white;
 }
 
 .home .section .row .centered {
