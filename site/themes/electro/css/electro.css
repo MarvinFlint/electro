@@ -10161,12 +10161,6 @@ img {
   -ms-user-select: none;
 }
 
-body {
-  background-image: url("/assets/backgrounds/arctic_ops.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-}
-
 * {
   padding: 0;
   margin: 0;
