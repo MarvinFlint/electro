@@ -10319,7 +10319,7 @@ body {
 .runepage {
   display: none;
   position: absolute;
-  top: 0;
+  top: 27px;
   left: 0;
 }
 
