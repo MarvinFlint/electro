@@ -67,11 +67,9 @@ function applySettings() {
     // the DOM structure in place
     elementHeight = $("." + clickedEle + "-rune").height();
     $("#runepages").height(elementHeight);
-
     // Display the selected runepage via the IDs set in the ControlPanel            
     $(".runepage").fadeOut(500);
     $("." + clickedEle + "-rune").fadeIn(500);
-
     //Display the gameplay section
     $(".gameplay-section").fadeOut(500);
     $("." + $selectedLane + "." + $selectedKeystone + "." + $selectedEnemy).fadeIn(500);
@@ -84,6 +82,8 @@ function applySettings() {
 
     // Scroll to top
     $("html, body").animate({ scrollTop: 0 }, "slow");
+    //Set opacity of "home"
+    $(".home").css("opacity", "1");
 }
 
 //Opening / closing the different navigation options
