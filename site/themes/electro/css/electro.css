@@ -10235,7 +10235,7 @@ body {
 }
 
 .nav-content button {
-  margin: 0 15px;
+  margin: 0 17px;
   width: 55px;
   height: auto;
   border: 1px solid #7300ff;
@@ -10267,7 +10267,7 @@ body {
   position: relative;
   height: 25px;
   width: 55px;
-  margin-left: 15px;
+  margin-left: 17px;
   background: rgba(0, 0, 0, 0.3);
 }
 
@@ -10307,6 +10307,12 @@ body {
     right: -12px;
     top: 83px;
     transform: translate(-48%, -50%);
+  }
+}
+
+@-moz-document url-prefix() {
+  .nav-segment {
+    max-height: 80px;
   }
 }
 
