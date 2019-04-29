@@ -100,9 +100,10 @@
   content: attr(data-after);
   position: fixed;
   left: 17px;
+  color: white;
 }
 
-@media only screen and (max-width: 640px) {   
+@media only screen and (max-width: 1024px) {   
   .nav {
     width: 100vw;
     left: 0;
@@ -127,6 +128,9 @@
     }
   }
   .toggle{
-    display: none;
+    position: absolute;
+    right: -12px;
+    top: 83px;
+    transform: translate(-48%, -50%);
   }
 }

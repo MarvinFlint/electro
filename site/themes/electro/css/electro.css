@@ -10275,9 +10275,10 @@ body {
   content: attr(data-after);
   position: fixed;
   left: 17px;
+  color: white;
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 1024px) {
   .nav {
     width: 100vw;
     left: 0;
@@ -10302,7 +10303,10 @@ body {
     max-width: 276px;
   }
   .toggle {
-    display: none;
+    position: absolute;
+    right: -12px;
+    top: 83px;
+    transform: translate(-48%, -50%);
   }
 }
 
@@ -10328,7 +10332,7 @@ body {
 
 #itembuilds .itembuild {
   padding: 15px;
-  border: 1px solid black;
+  border: 1px solid #7300ff;
   margin: 0 auto;
 }
 
@@ -10344,7 +10348,7 @@ body {
 
 .home {
   width: 90vw;
-  margin: 100px 5vw;
+  margin: 0 5vw;
   opacity: 0;
 }
 
@@ -10436,7 +10440,7 @@ body {
   background-color: rgba(0, 0, 0, 0.9);
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 1024px) {
   .home {
     width: 100vw;
     margin: 100px 0;

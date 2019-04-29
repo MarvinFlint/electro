@@ -1,6 +1,6 @@
 .home{
     width: 90vw;
-    margin: 100px 5vw;    
+    margin: 0 5vw;    
     opacity: 0;
     .section{
         position: relative;
@@ -76,7 +76,7 @@
     background-color: rgba(0,0,0, 0.9);
 }
 
-@media only screen and (max-width:650px){
+@media only screen and (max-width:1024px){
     .home{
         width: 100vw;
         margin: 100px 0;
