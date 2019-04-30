@@ -15004,6 +15004,7 @@ $(document).ready(function () {
         $selectedEnemy = $(".enemy.active-choice").attr("id");
 
         console.log($selectedLane, $selectedEnemy, $selectedForce, $selectedKeystone);
+        
     })
 })
 function applySettings() {
