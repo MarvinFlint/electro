@@ -1,12 +1,7 @@
-<nav class="nav toggled col-xl-4 col-lg-6 col-md-6 col-sm-xs-12">
-    <div class="col-12 nav-header">
-        <div class="nav-toggle">
-            <img class="toggle-pic" src="{{ theme:img src='navtoggle.png' }}">
-        </div>
-    </div>
-    <div class="col-12 nav-content">
+<nav class="nav toggled">
+    <div class="nav-content">
         <h1 class="title nav-title">{{ navigation_title }}</h1>
-        <div class="col-12 nav-segment choice">
+        <div class="col-lg-12 col-sm-xs-3 nav-segment choice">
             <h2 class="title segment-title">{{ segment_title_1 }}</h2>
             <div id="keystones" class="choices" title="{{ keystone_tooltip }}">                
                 {{ collection from="keystones" sort="order_number:asc"}}
@@ -18,7 +13,7 @@
                 {{ /collection }}
             </div>
         </div>
-        <div class="col-12 nav-segment choice">
+        <div class="col-lg-12 col-sm-xs-3 nav-segment choice">
             <h2 class="title segment-title">{{ segment_title_2 }}</h2>
             <div id="lanes" class="choices" title="{{ lanes_tooltip }}">                
                 {{ collection from="lanes" sort="category"}}
@@ -30,7 +25,7 @@
                 {{ /collection }}
             </div>
         </div>
-        <div class="col-12 nav-segment choice">
+        <div class="col-lg-12 col-sm-xs-3 nav-segment choice">
             <h2 class="title segment-title">{{ segment_title_3 }}</h2>
             <div id="af" class="choices" title="{{ adaptive_force_tooltip }}">
                 {{ collection from="adaptive_force" sort="category"}}
@@ -42,7 +37,7 @@
                 {{ /collection }}
             </div>
         </div> 
-        <div class="col-12 nav-segment choice">
+        <div class="col-lg-12 col-sm-xs-3 nav-segment choice">
             <h2 class="title segment-title">{{ segment_title_4 }}</h2>
             <div id="enemy" class="choices" title="{{ enemy_tooltip }}">
                 {{ collection from="enemy" sort="order_number:asc"}}
@@ -54,6 +49,13 @@
                 {{ /collection }}
             </div>
         </div>     
-        <button onclick="applySettings()">Apply</button>  
+        <button class="nav-button" onclick="applySettings()">
+        {{ assets:applypic}}
+        <img src="{{ url }}">
+        {{ /assets:applypic }}
+        </button>  
+        <div class="toggle">
+            
+        </div>
     </div>
 </nav>

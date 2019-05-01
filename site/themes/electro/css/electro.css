@@ -10153,35 +10153,38 @@ html {
   src: url("/assets/fonts/adam_cg_pro.otf");
 }
 
+img {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+body {
+  background-image: url("/assets/backgrounds/arctic_ops.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+p {
+  font-size: 18px;
+}
+
 * {
   padding: 0;
   margin: 0;
 }
 
 .nav {
-  min-height: 100vh;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: fixed;
+  top: 24vh;
+  left: -15px;
   padding: 0;
   z-index: 1;
-  background-color: rgba(0, 0, 0, 0.85);
-  transition: 2s all;
-}
-
-.nav .nav-header {
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.nav .nav-header img {
-  max-width: 55px;
-  height: auto;
 }
 
 .nav-segment {
@@ -10192,8 +10195,9 @@ html {
 
 .nav-segment .choices {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row;
+  height: 55px;
+  position: relative;
 }
 
 .nav-segment .choices .pic-container {
@@ -10202,6 +10206,14 @@ html {
   background-color: #b0b0b0;
   box-sizing: border-box;
   transition: all 1s;
+  margin: 2px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  order: 2;
+  border: 1px solid;
 }
 
 .nav-segment .choices .pic-container img {
@@ -10215,55 +10227,103 @@ html {
   margin: 10%;
 }
 
+.nav-segment .choices div:nth-child(1) {
+  z-index: 2;
+}
+
 .nav-content {
   padding: 0;
   transition: 1s all ease;
-  opacity: 0;
   display: flex;
   flex-direction: column;
 }
 
 .nav-content button {
-  margin: 15px auto;
-  width: 150px;
-  height: 45px;
+  margin: 0 17px;
+  width: 55px;
+  height: auto;
   border: 1px solid #7300ff;
   font-size: 18px;
+}
+
+.nav-content button img {
+  width: 66%;
+  height: auto;
 }
 
 .title {
   color: white;
   text-align: center;
   font-family: 'AdamCG';
+  display: none;
 }
 
 .active-choice {
   background-color: white !important;
   box-shadow: inset 0px 0px 20px 10px #7300ff;
   transition: all 1s;
+  z-index: 2 !important;
+  display: block !important;
+  order: 1 !important;
 }
 
-.toggled {
-  width: 5vw;
-  transition: all 1s;
+.toggle {
+  position: relative;
+  height: 25px;
+  width: 55px;
+  margin-left: 17px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.toggle::after {
+  content: attr(data-after);
   position: fixed;
+  left: 17px;
+  color: white;
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 1024px) {
   .nav {
-    min-height: 0;
-    height: auto;
     width: 100vw;
+    left: 0;
+    top: 0;
+    max-height: 85px;
   }
-  .toggled {
-    height: 35px;
+  .nav .nav-content {
+    flex-direction: row;
+    padding-left: 15px;
+  }
+  .nav .nav-content .nav-segment {
+    padding: 15px 0;
+  }
+  .nav .nav-content .nav-segment .choices {
+    height: auto;
+    flex-direction: column;
+  }
+  .nav .nav-content button {
+    width: unset;
+    margin: 15px;
+    height: 55px;
+    max-width: 276px;
+  }
+  .toggle {
+    position: absolute;
+    right: -12px;
+    top: 83px;
+    transform: translate(-48%, -50%);
+  }
+}
+
+@-moz-document url-prefix() {
+  .nav-segment {
+    max-height: 80px;
   }
 }
 
 .runepage {
   display: none;
   position: absolute;
-  top: 0;
+  top: 27px;
   left: 0;
 }
 
@@ -10276,9 +10336,13 @@ html {
   align-items: center;
 }
 
+.runepage .row div p {
+  padding: 15px;
+}
+
 #itembuilds .itembuild {
   padding: 15px;
-  border: 1px solid black;
+  border: 1px solid #7300ff;
   margin: 0 auto;
 }
 
@@ -10294,12 +10358,17 @@ html {
 
 .home {
   width: 90vw;
-  margin: 50px 5vw;
+  margin: 0 5vw;
+  opacity: 0;
 }
 
 .home .section {
   position: relative;
-  padding: 0 0 35px;
+  color: white;
+}
+
+.home .section .section-content {
+  padding: 35px 0;
 }
 
 .home .section .row .centered {
@@ -10355,6 +10424,37 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#runepages {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#itembuilds {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+#situational {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#gameplay {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+#abilitymax {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#matchups {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+@media only screen and (max-width: 1024px) {
+  .home {
+    width: 100vw;
+    margin: 100px 0;
+  }
 }
 
 /*# sourceMappingURL=electro.css.map */

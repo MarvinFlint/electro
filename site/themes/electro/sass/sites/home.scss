@@ -1,9 +1,13 @@
 .home{
     width: 90vw;
-    margin: 50px 5vw;    
+    margin: 0 5vw;    
+    opacity: 0;
     .section{
         position: relative;
-        padding: 0 0 35px;
+        color: white;
+        .section-content{
+            padding:35px 0;
+        }
         .row{
             .centered{
                 margin: 0 auto;
@@ -52,4 +56,29 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+#runepages{
+    background-color: rgba(0,0,0, 0.7);
+}
+#itembuilds{
+    background-color: rgba(0,0,0, 0.9);
+}
+#situational{
+    background-color: rgba(0,0,0, 0.7);
+}
+#gameplay{
+    background-color: rgba(0,0,0, 0.9);
+}
+#abilitymax{
+    background-color: rgba(0,0,0, 0.7);
+}
+#matchups{
+    background-color: rgba(0,0,0, 0.9);
+}
+
+@media only screen and (max-width:1024px){
+    .home{
+        width: 100vw;
+        margin: 100px 0;
+    }
 }

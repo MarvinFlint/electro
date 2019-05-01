@@ -1,3 +1,5 @@
+applypic:
+  - /assets/checkmark.png
 segment_title_1: Keystones
 keystone_tooltip: 'Keystones are the most important choice for your playstyle'
 segment_title_2: Lanes
