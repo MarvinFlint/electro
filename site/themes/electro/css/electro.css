@@ -10390,6 +10390,10 @@ p {
   height: auto;
 }
 
+.matchup-content .matchup-runes {
+  align-items: center;
+}
+
 .matchup-content .matchup-ability {
   flex-direction: column;
   align-items: center;
@@ -10438,7 +10442,6 @@ p {
   }
   .matchup-content .matchup-runes {
     flex-direction: column;
-    align-items: center;
   }
 }
 

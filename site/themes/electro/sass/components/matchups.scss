@@ -29,6 +29,9 @@
             height: auto;
         }
     }
+    .matchup-runes{
+        align-items: center;
+    }
     .matchup-ability{
         flex-direction: column;
         align-items: center;
@@ -78,7 +81,7 @@
     .matchup-content{
         .matchup-runes{
             flex-direction: column;
-            align-items: center;
+            
         }
     }
 }
