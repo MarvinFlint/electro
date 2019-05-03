@@ -48,4 +48,10 @@ sections:
       enemy_tooltip:
         type: textarea
         display: 'Enemy Tooltip'
+  matchup_list:
+    display: 'Matchup List'
+    fields:
+      matchups:
+        type: select
+        display: matchups
 taxonomies: true

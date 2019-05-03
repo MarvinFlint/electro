@@ -1,5 +1,8 @@
 {{ collection from="matchups" }}
 <div id="{{ panelID }}" data-champion="{{ title }}" class="{{ title }} container-fluid matchup">
+  {{ assets:champion_icon }}
+  <img class="matchup-icon" src="{{ url }}">
+  {{ /assets:champion_icon }}
   <div class="row">
     <div class="col-12 matchup-switcher">
       <ul class="matchup-panels">
