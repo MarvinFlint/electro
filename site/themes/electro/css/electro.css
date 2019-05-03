@@ -10356,6 +10356,76 @@ p {
   }
 }
 
+.matchup-panels {
+  list-style-type: none;
+  display: flex;
+}
+
+.matchup-panels li {
+  width: calc(100%/3);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 24px;
+  height: 64px;
+  background-color: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  line-height: 64px;
+  border-right: 2px solid white;
+}
+
+.matchup-panels li:first-child {
+  border-left: 2px solid white;
+}
+
+.matchup-content .panel {
+  display: none;
+  min-height: 405px;
+}
+
+.matchup-content .panel .matchup-runes-pic {
+  width: 100%;
+  height: auto;
+}
+
+.matchup-content .matchup-ability {
+  flex-direction: column;
+  align-items: center;
+}
+
+.matchup-content .matchup-ability div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.matchup-content .matchup-ability div img {
+  margin: 15px;
+}
+
+.matchup-content .matchup-details p {
+  width: 80%;
+}
+
+.active-panel {
+  display: flex !important;
+}
+
+@media only screen and (max-width: 760px) {
+  .matchup-panels {
+    flex-direction: column;
+  }
+  .matchup-panels li {
+    width: 100%;
+    border: 1px solid white;
+  }
+  .matchup-content .matchup-runes {
+    flex-direction: column;
+  }
+}
+
 .home {
   width: 90vw;
   margin: 0 5vw;
@@ -10392,10 +10462,6 @@ p {
 }
 
 .home .section .row .ab-max {
-  display: none;
-}
-
-.home .section .row .matchup {
   display: none;
 }
 
@@ -10454,6 +10520,7 @@ p {
   .home {
     width: 100vw;
     margin: 100px 0;
+    overflow: hidden;
   }
 }
 

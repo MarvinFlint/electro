@@ -15050,7 +15050,7 @@ $(document).ready(function () {
     })
 })   
 
-// CHeck for clicks outside of the selections and close them
+// Check for clicks outside of the selections and close them
 $(document).mouseup(function(e) 
 {
     var container = $(".pic-container");
@@ -15063,4 +15063,13 @@ $(document).mouseup(function(e)
     }
 });
 
+//Switch the panels in the matchup section
+
+$(document).ready(function(){
+    $(".panel-switch").click(function(){
+        $clickedPanel = $(this).attr("id");
+        $(".panel").removeClass("active-panel");
+        $("." + $clickedPanel).addClass("active-panel");
+    })
+})
 //# sourceMappingURL=electro.js.map

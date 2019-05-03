@@ -3,25 +3,29 @@
   <div class="row">
     <div class="col-12 matchup-switcher">
       <ul class="matchup-panels">
-        <li>Runes</li>
-        <li>Ability Max</li>
-        <li>Details</li>
+        <li class="panel-switch" id="matchup-runes">Runes</li>
+        <li class="panel-switch" id="matchup-ability">Ability Max</li>
+        <li class="panel-switch" id="matchup-details">Details</li>
       </ul>
     </div>
     <div class="col-12 matchup-content">
-      <div class="matchup-runes">
+      <div class="panel matchup-runes active-panel">
+        <div class="col-lg-6 col-md-sm-xs-12">
         {{ assets:matchup_runes }}
-        <img src="{{ url }}">
+        <img class="matchup-runes-pic" src="{{ url }}">
         {{ /assets:matchup_runes }}
+        </div>
         {{ matchup_rune_text | markdown }}
       </div>
-      <div class="matchup-ability">
+      <div class="panel matchup-ability">
+        <div class="col-12">
         {{ assets:matchup_ability }}
         <img src="{{ url }}">
         {{ /assets:matchup_ability }}
+        </div>
         {{ matchup_ability_text | markdown }}
       </div>
-      <div class="matchup-details">
+      <div class="panel matchup-details">
         {{ matchup_details_text | markdown }}
       </div>
     </div>
