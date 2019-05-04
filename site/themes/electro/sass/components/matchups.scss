@@ -17,7 +17,8 @@
             align-content: center;
             line-height: 64px;
             border-right: 2px solid white;
-            transition: 1s;                 
+            transition: 1s;   
+            cursor: pointer;              
         }  
         li:last-child{
             border:none;
@@ -29,7 +30,7 @@
     .matchup-content{
         .panel{
             display: none;  
-            min-height: 405px;         
+            min-height: 420px;         
             .matchup-runes-pic{
                 width: 100%;
                 height: auto;
@@ -46,7 +47,17 @@
                 align-items: center;
                 justify-content: center;
                 img{
-                    margin: 15px;               
+                    margin: 15px;  
+                    padding: 5px;
+                    ::after{
+                        content: ">";
+                        color: white;
+                    }
+                    :last-child{
+                        ::after{
+                            content: "";
+                        }
+                    }             
                 }
             }
             p{

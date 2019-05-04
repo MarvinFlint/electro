@@ -10380,6 +10380,7 @@ p {
   line-height: 64px;
   border-right: 2px solid white;
   transition: 1s;
+  cursor: pointer;
 }
 
 .matchup .matchup-panels li:last-child {
@@ -10392,7 +10393,7 @@ p {
 
 .matchup .matchup-content .panel {
   display: none;
-  min-height: 405px;
+  min-height: 420px;
 }
 
 .matchup .matchup-content .panel .matchup-runes-pic {
@@ -10417,6 +10418,16 @@ p {
 
 .matchup .matchup-content .matchup-ability div img {
   margin: 15px;
+  padding: 5px;
+}
+
+.matchup .matchup-content .matchup-ability div img ::after {
+  content: ">";
+  color: white;
+}
+
+.matchup .matchup-content .matchup-ability div img :last-child ::after {
+  content: "";
 }
 
 .matchup .matchup-content .matchup-ability p {
