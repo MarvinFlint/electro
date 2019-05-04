@@ -10356,65 +10356,84 @@ p {
   }
 }
 
-.matchup-panels {
-  list-style-type: none;
-  display: flex;
+.matchup {
+  display: none;
 }
 
-.matchup-panels li {
+.matchup .matchup-panels {
+  list-style-type: none;
+  display: flex;
+  width: 100%;
+}
+
+.matchup .matchup-panels li {
   width: calc(100%/3);
   text-align: center;
   text-transform: uppercase;
   font-weight: 600;
   font-size: 24px;
   height: 64px;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.8);
   justify-content: center;
   align-items: center;
   align-content: center;
   line-height: 64px;
   border-right: 2px solid white;
+  transition: 1s;
 }
 
-.matchup-panels li:first-child {
-  border-left: 2px solid white;
+.matchup .matchup-panels li:last-child {
+  border: none;
 }
 
-.matchup-content .panel {
+.matchup .matchup-panels .panel-switch:hover {
+  background-color: rgba(252, 0, 231, 0.4) !important;
+}
+
+.matchup .matchup-content .panel {
   display: none;
   min-height: 405px;
 }
 
-.matchup-content .panel .matchup-runes-pic {
+.matchup .matchup-content .panel .matchup-runes-pic {
   width: 100%;
   height: auto;
 }
 
-.matchup-content .matchup-runes {
+.matchup .matchup-content .matchup-runes {
   align-items: center;
 }
 
-.matchup-content .matchup-ability {
+.matchup .matchup-content .matchup-ability {
   flex-direction: column;
   align-items: center;
 }
 
-.matchup-content .matchup-ability div {
+.matchup .matchup-content .matchup-ability div {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.matchup-content .matchup-ability div img {
+.matchup .matchup-content .matchup-ability div img {
   margin: 15px;
 }
 
-.matchup-content .matchup-details p {
+.matchup .matchup-content .matchup-ability p {
   width: 80%;
+}
+
+.matchup .matchup-content .matchup-details p {
+  width: 80%;
+  margin: 15px auto;
 }
 
 .active-panel {
   display: flex !important;
+}
+
+.active-switcher {
+  background-color: rgba(252, 0, 231, 0.4) !important;
 }
 
 .mu--title {
@@ -10432,16 +10451,34 @@ p {
   width: 100px;
 }
 
+#matchups .matchup-list {
+  height: 34px;
+  position: absolute;
+  border-radius: 5px;
+  min-width: 170px;
+  bottom: 15px;
+  right: 124px;
+  border: 1px solid white;
+}
+
 @media only screen and (max-width: 760px) {
   .matchup-panels {
     flex-direction: column;
   }
   .matchup-panels li {
-    width: 100%;
-    border: 1px solid white;
+    width: 100% !important;
+    border: none;
+    border-right: none !important;
+    border-bottom: 1px solid white;
+  }
+  .matchup-panels li :last-child {
+    border: none;
   }
   .matchup-content .matchup-runes {
     flex-direction: column;
+  }
+  .matchup-content .panel {
+    min-height: 600px !important;
   }
 }
 

@@ -15068,8 +15068,20 @@ $(document).mouseup(function(e)
 $(document).ready(function(){
     $(".panel-switch").click(function(){
         $clickedPanel = $(this).attr("id");
+        $(".panel-switch").removeClass("active-switcher");
+        $(this).addClass("active-switcher");
         $(".panel").removeClass("active-panel");
         $("." + $clickedPanel).addClass("active-panel");
+    })
+})
+
+//Change the displayed Matchup
+
+$(document).ready(function(){
+    $(".matchup-list").change(function(){
+        $selectedOption = $("#mu-list :selected").val();
+        $(".matchup").fadeOut(500);
+        $("." + $selectedOption).fadeIn(500);
     })
 })
 //# sourceMappingURL=electro.js.map

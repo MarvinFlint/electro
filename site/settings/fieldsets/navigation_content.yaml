@@ -52,6 +52,6 @@ sections:
     display: 'Matchup List'
     fields:
       matchups:
-        type: select
+        type: list
         display: matchups
 taxonomies: true

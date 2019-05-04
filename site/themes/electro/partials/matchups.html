@@ -5,31 +5,39 @@
   {{ /assets:champion_icon }}
   <div class="row">
     <div class="col-12 matchup-switcher">
-      <ul class="matchup-panels">
-        <li class="panel-switch" id="matchup-runes">Runes</li>
-        <li class="panel-switch" id="matchup-ability">Ability Max</li>
-        <li class="panel-switch" id="matchup-details">Details</li>
-      </ul>
+      <div class="row">
+        <ul class="matchup-panels">
+          <li class="panel-switch active-switcher" id="matchup-runes">Runes</li>
+          <li class="panel-switch" id="matchup-ability">Ability Max</li>
+          <li class="panel-switch" id="matchup-details">Details</li>
+        </ul>
+      </div>
     </div>
     <div class="col-12 matchup-content">
-      <div class="panel matchup-runes active-panel">
-        <div class="col-lg-6 col-md-sm-xs-12">
-        {{ assets:matchup_runes }}
-        <img class="matchup-runes-pic" src="{{ url }}">
-        {{ /assets:matchup_runes }}
+      <div class="row">
+        <div class="panel matchup-runes active-panel">
+          <div class="row">
+            <div class="col-lg-6 col-md-sm-xs-12">
+            {{ assets:matchup_runes }}
+            <img class="matchup-runes-pic" src="{{ url }}">
+            {{ /assets:matchup_runes }}
+            </div>
+            <div class="col-lg-6 col-md-sm-xs-12">
+            {{ matchup_rune_text | markdown }}
+            </div>
+          </div>
         </div>
-        {{ matchup_rune_text | markdown }}
-      </div>
-      <div class="panel matchup-ability">
-        <div class="col-12">
-        {{ assets:matchup_ability }}
-        <img src="{{ url }}">
-        {{ /assets:matchup_ability }}
+        <div class="panel matchup-ability">
+          <div class="col-lg-6 col-md-sm-xs-12">
+          {{ assets:matchup_ability }}
+          <img src="{{ url }}">
+          {{ /assets:matchup_ability }}
+          </div>
+          {{ matchup_ability_text | markdown }}
         </div>
-        {{ matchup_ability_text | markdown }}
-      </div>
-      <div class="panel matchup-details">
-        {{ matchup_details_text | markdown }}
+        <div class="panel matchup-details">
+          {{ matchup_details_text | markdown }}
+        </div>
       </div>
     </div>
   </div>

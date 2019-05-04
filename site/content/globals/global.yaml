@@ -8,6 +8,10 @@ segment_title_3: Playstyle
 adaptive_force_tooltip: 'Whether you go Attack Damage or Ability Power'
 segment_title_4: Opponent
 enemy_tooltip: 'What type of champion do you lane against?'
+matchups:
+  - Darius
+  - Irelia
+  - Camille
 fieldset: navigation_content
 title: 'Navigation Content'
 id: 6ca8bdce-febb-47f6-83f5-728f1fa25f03

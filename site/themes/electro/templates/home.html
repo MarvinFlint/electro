@@ -35,9 +35,14 @@
         </div>
     </div>   
     <div class="section container-fluid">
-        <div class="section-content row" id="matchups">     
+        <div class="section-content row" id="matchups">
+            <select id="mu-list" class="matchup-list">
+                {{ matchups }}
+                <option value="{{ value }}">{{ value }}</option>
+                {{ /matchups }}
+            </select>   
             <h2 class="mu--title">Matchups</h2>       
-            
+
             {{ partial:matchups }}
         </div>
     </div>
