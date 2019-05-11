@@ -81,6 +81,8 @@ function applySettings() {
     $("." + $selectedForce + ".itembuild").fadeIn(500);
     $("." + $selectedForce + ".sit-item").fadeIn(500);
 
+    //Display apprpriate tips & tricks section
+    $("." + $selectedForce + ".tip").fadeIn(500);
     // Scroll to top
     $("html, body").animate({ scrollTop: 0 }, "slow");
     //Set opacity of "home"
@@ -130,8 +132,8 @@ $(document).ready(function(){
     })
     $(".matchup-list").change(function(){
         $selectedOption = $("#mu-list :selected").val();
-        $(".matchup").fadeOut(500);
-        $("." + $selectedOption).fadeIn(500);
+        $(".matchup").slideUp().delay(500).fadeOut(500);
+        $("." + $selectedOption).slideDown().delay(500).fadeIn(500);
     })
 })
 

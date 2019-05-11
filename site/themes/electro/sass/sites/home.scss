@@ -27,10 +27,7 @@
             }
             .ab-max{
                 display: none;
-            }
-            .matchup{
-                //display: none;
-            }
+            }            
         }        
     }
     .warning{
@@ -69,8 +66,25 @@
 #gameplay{
     background-color: rgba(0,0,0, 0.9);
 }
-#abilitymax{
+#tips{
     background-color: rgba(0,0,0, 0.7);
+    h2{
+    text-align: center;
+    font-family: AdamCG;
+    font-size: 30px;
+    margin: 0 auto;
+    }
+    ul{
+        list-style-type: none;
+        width:80%;
+        margin: 50px 10% 0;
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+        li{
+            font-size: 18px;
+        }
+    }
 }
 #matchups{
     background-color: rgba(0,0,0, 0.9);

@@ -1,0 +1,12 @@
+sections:
+  main:
+    display: Main
+    fields:
+      tip_text:
+        type: text
+        display: 'Text of the tip'
+      tip_af:
+        type: text
+        display: 'Associated Playstyle'
+taxonomies: true
+title: 'Tips & Tricks'
